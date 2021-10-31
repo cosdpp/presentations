@@ -1,0 +1,694 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>HTML, CSS, & the Semantic Web – Digital Publication Platforms</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/yatil.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/a11y-dark.css">
+	</head>
+	<body>
+		<div class="reveal">
+
+			<div class="slides">
+
+        <section class="centered">
+          <h1>
+            HTML, CSS, & the Semantic Web
+            <br>
+            <small>Digital Publication Platforms</small>
+          </h1>
+          <p>Content Strategy 2021<br>Eric Eggert</p>
+        </section>
+
+        <section>
+          <h1>Web Standards</h1>
+        </section>
+
+        <section>
+          <h2>WWW Standards Bodies</h2>
+          <ul>
+            <li><strong>W3C:</strong> World Wide Web Consortium</li>
+            <li><strong>WHATWG:</strong> Web Hypertext Application Technology Working Group</li>
+            <li><strong>Ecma International</strong> (<i>née</i> European Computer Manufacturers Association)</li>
+            <li><strong>ISO:</strong> International Organization for Standardization</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Core Web Technologies</h2>
+        </section>
+
+        <section>
+          <h3>HTML<br><small>by WHATWG & W3C</small></h3>
+          <pre><code class="language-html" data-trim>
+            <h1 class="fancy">
+              This is a heading
+            </h1>
+          </code></pre>
+        </section>
+
+        <section>
+          <h4>HyperText Markup Language</h4>
+          <ul>
+            <li>Invented with the WWW by Tim Berners-Lee in 1989/1990.</li>
+            <li>Based on the existing <em>Standard Generalized Markup Language</em> (SGML).</li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>HTML Elements</h4>
+          <img src="img/html-element.png" alt="HTML element with attribute, the start and end tags are marked as is the href attribute and its value.">
+        </section>
+
+      <section>
+        <h4><a href="https://www.w3.org/History/19921103-hypertext/hypertext/WWW/MarkUp/MarkUp.html">HTML “1.0” Elements</a> (1/2)</h4>
+        <ul>
+          <li><code>&lt;TITLE> ... &lt;/TITLE></code></li>
+          <li><code>&lt;NEXTID 27></code></li>
+          <li><code>&lt;A NAME=xxx HREF=XXX> ... &lt;/A></code></li>
+          <li><code>&lt;ISINDEX></code></li>
+          <li><code>&lt;PLAINTEXT></code></li>
+          <li><code>&lt;LISTING> ... &lt;/LISTING></code></li>
+        </ul>
+      </section>
+
+      <section>
+        <h4><a href="https://www.w3.org/History/19921103-hypertext/hypertext/WWW/MarkUp/MarkUp.html">HTML “1.0” Elements</a> (2/2)</h4>
+        <ul>
+          <li><code>&lt;P></code></li>
+          <li><code>&lt;H1>, &lt;H2>, &lt;H3>, &lt;H4>, &lt;H5>, &lt;H6></code></li>
+          <li><code>&lt;ADDRESS> text ... &lt;/ADDRESS></code></li>
+          <li><pre><code class="language-html" data-trim>&lt;DL>
+  &lt;DT>Term&lt;D>definition pagagraph
+  &lt;DT>Term2&lt;DD>Definition of term2
+&lt;/DL></code></pre></li>
+          <li><pre><code class="language-html" data-trim>&lt;UL>
+  &lt;LI> list element
+  &lt;LI> another list element ...
+&lt;/UL></code></pre></li>
+        </ul>
+      </section>
+
+      <section>
+        <h4>Most still exist today!</h4>
+      </section>
+
+      <section>
+        <h4><a href="https://www.w3.org/MarkUp/HTMLPlus/htmlplus_1.html">HTML+</a><br><small>November 8, 1993</small></h4>
+      </section>
+
+      <section>
+        <h5>New Elements: Presentation Only “Tags”</h5>
+        <img src="https://www.w3.org/MarkUp/HTMLPlus/htmlplus_AFrame_17.gif" alt="Presentation Only Tags">
+      </section>
+
+      <section>
+        <h5>New Elements in HTML+ (1/3)</h5>
+        <ul>
+          <li><code>&lt;EM></code>: normal emphasis (italic)</li>
+          <li><code>&lt;STRONG></code>: strong emphasis (bold)</li>
+          <li><code>&lt;Q></code>: short quotes</li>
+          <li><code>&lt;KBD></code>: something the user would type</li>
+          <li><code>&lt;CODE></code>: code example</li>
+        </ul>
+      </section>
+
+      <section>
+        <h5>New Elements in HTML+ (2/3)</h5>
+        <ul>
+          <li><code>&lt;IMG></code> and <code>&lt;IMAGE></code>: images and images with alternative text</li>
+          <li><code>&lt;CHANGE></code>, <code>&lt;ADDED></code> & <code>&lt;REMOVED></code>: changes in the document</li>
+          <li><code>&lt;OL></code>: ordered lists</li>
+          <li><code>&lt;FIG></code> & <code>&lt;CAPTION></code>: figures</li>
+          <li><code>&lt;TABLE></code>: tables</li>
+        </ul>
+      </section>
+
+      <section>
+        <h5>New Elements in HTML+ (3/3)</h5>
+        <ul>
+          <li><code>&lt;FORM></code>, <code>&lt;INPUT></code>, <code>&lt;TEXTAREA></code>: Forms and form inputs</li>
+          <li><code>&lt;LIT></code>: Literal text</li>
+          <li><code>&lt;PRE></code>: Preformatted text</li>
+          <li><code>&lt;MATH></code></li>
+        </ul>
+      </section>
+
+      <section>
+        <h4><a href="https://www.w3.org/MarkUp/html-spec/">HTML 2.0</a><br><small>November, 1995</small></h4>
+        <p>Minor changes to HTML+</p>
+      </section>
+
+      <section>
+        <h4><a href="https://www.w3.org/TR/2018/SPSD-html32-20180315/">HTML 3.2</a><br><small>Januar 14, 1997</small></h4>
+      </section>
+
+      <section>
+        <h4><a href="https://www.w3.org/TR/html401/">HTML 4.01</a><br><small>December 24, 1999</small></h4>
+      </section>
+
+      <section>
+        <h3><a href="https://www.w3.org/TR/xhtml1/">The Extensible HyperText Markup Language: XHTML 1.0</a><br><small>Januar 26, 2000; Revised August 1, 2002</small></h3>
+        <p>“A reformulation of HTML 4 in XML 1.0”</p>
+      </section>
+
+      <section>
+        <h4>XML? Extensible Markup Language!</h4>
+        <blockquote>
+          <p>XML was conceived as a means of regaining the power and flexibility of SGML without most of its complexity. Although a restricted form of SGML, XML nonetheless preserves most of SGML’s power and richness, and yet still retains all of SGML’s commonly used features.</p>
+        </blockquote>
+      </section>
+
+      <section>
+        <div class="two columns">
+          <div>
+            <p>👍</p>
+            <ul>
+              <li>Stricter code rules</li>
+              <li>Extensibility</li>
+              <li>Better machine readability</li>
+            </ul>
+          </div>
+          <div>
+            <p>👎</p>
+            <ul>
+              <li>Errors broke websites</li>
+              <li>Incompatibility with existing HTML code</li>
+              <li>Slightly more complicated syntax, e.g. <code>&lt;br></code> &rarr; <code>&lt;br /></code>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3><a href="https://www.w3.org/TR/xhtml11/">XHTML 1.1: Module-based XHTML</a><br><small>November 23, 2010</small></h3>
+      </section>
+
+      <section>
+        <h3>WHATWG</h3>
+        <blockquote>
+          <p>The WHATWG was founded by individuals of <strong>Apple</strong>, <strong>Mozilla</strong>, and <strong>Opera</strong> in 2004, after a W3C workshop. [The companies] were becoming increasingly <strong>concerned about the W3C’s direction with XHTML</strong>, lack of interest in HTML, and apparent disregard for the needs of real-world web developers. So, in response, these organisations set out with a mission to address these concerns and the <strong>Web Hypertext Application Technology Working Group</strong> was born.</p>
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><a href="https://html.spec.whatwg.org/multipage/">HTML</a><br><small>Living Standard</small></h3>
+        <p><strong>W3C:</strong> <a href="https://www.w3.org/TR/2018/SPSD-html5-20180327/">“HTML5” Snapshot</a>, October 28, 2014</p>
+      </section>
+
+      <section>
+        <h3>March 27, 2018</h3>
+        <p>All HTML specifications apart from the <em>HTML Living Standard</em> are superseded.</p>
+      </section>
+
+      <section>
+        <h3><a href="https://www.w3.org/2019/04/WHATWG-W3C-MOU.html">Memorandum of Understanding Between W3C and WHATWG</a><br><small>March 28, 2019</small></h3>
+        <p>DOM and HTML, as well as other specifications go to WHATWG, with some support from W3C.</p>
+      </section>
+
+      <section>
+        <h3>In Practice</h3>
+        <p>No significant changes, browser implemented HTML Living Standard for 10+ years.</p>
+      </section>
+
+      <section>
+        <h3>A basic HTML document</h3>
+        <pre><code class="language-html" data-trim  data-line-numbers="1|2,11|3-5|6-10|">&lt;!DOCTYPE html>
+&lt;html lang="en">
+  &lt;head>
+    &lt;title>Swapping Songs&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;h1>Swapping Songs&lt;/h1>
+    &lt;p>Tonight I swapped some of the songs I wrote with some friends, who
+       gave me some of the songs they wrote. I love sharing my music.&lt;/p>
+  &lt;/body>
+&lt;/html></code></pre>
+      </section>
+
+      <section>
+        <h4>Some HTML structure elements</h4>
+        <ul>
+          <li>Navigations (<code>&lt;nav></code>)</li>
+          <li>Main Area (<code>&lt;main></code>)</li>
+          <li>Sections (<code>&lt;section></code>)</li>
+          <li>Articles (<code>&lt;article></code>)</li>
+          <li>Header & Footer (<code>&lt;header></code>, <code>&lt;footer></code>)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h4>Some HTML content elements</h4>
+        <ul>
+          <li>Headings (<code>&lt;h1></code>–<code>&lt;h6></code>)</li>
+          <li>Paragraphs (<code>&lt;p></code>)</li>
+          <li>Lists (<code>&lt;ul></code>, <code>&lt;ol></code>)</li>
+          <li>Emphasis (<code>&lt;strong></code>, <code>&lt;em></code>)</li>
+          <li>Quotes (<code>&lt;blockquote></code>)</li>
+          <li>Tables (<code>&lt;table></code>)</li>
+        </ul>
+      </section>
+
+        <section>
+          <h3>Cascading Style Sheets (CSS)<br><small>by W3C</small></h3>
+          <p>Layout and design for the content of the web pages.</p>
+          <pre><code class="language-css" data-trim>
+            .fancy {
+              font-family: fantasy;
+            }
+          </code></pre>
+        </section>
+
+        <section>
+          <h4>CSS for Layout</h4>
+        </section>
+
+        <section>
+          <h5><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">Grid</a></h5>
+          <div class="r-stack">
+            <img class="fragment fade-out" data-fragment-index="0" src="img/template-columns-rows-01.svg" alt="Grid with 5 columns and 3 rows" style="height: 40vh">
+            <img class="fragment fade-in-then-out current-visible" data-fragment-index="0" src="img/template-column-rows-02.svg" alt="Grid with 5 columns and 3 rows – with named lines" style="height: 40vh">
+            <img class="fragment fade-in-then-out" src="img/grid-column-row-start-end-01.svg" alt="grid item overlays from row 1, column 2 to row 2 column 4" style="height: 40vh">
+            <img class="fragment fade-in-then-out" src="img/dddgrid-template-areas.svg" alt="named areas" style="height: 40vh">
+          </div>
+        </section>
+
+        <section>
+          <h5><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox</a></h5>
+          <div class="r-stack">
+            <img class="fragment fade-out" data-fragment-index="0" src="img/01-container.svg" alt="Grid with 5 columns and 3 rows" style="height: 40vh">
+            <img class="fragment fade-in-then-out current-visible" data-fragment-index="0" src="img/02-items.svg" alt="Grid with 5 columns and 3 rows – with named lines" style="height: 40vh">
+            <img class="fragment fade-in-then-out" src="img/flex-direction.svg" alt="grid item overlays from row 1, column 2 to row 2 column 4" style="height: 40vh">
+            <img class="fragment fade-in-then-out" src="img/flex-wrap.svg" alt="named areas" style="height: 40vh">
+            <img class="fragment fade-in-then-out" src="img/justify-content.svg" alt="named areas" style="height: 40vh">
+          </div>
+        </section>
+
+
+        <section>
+          <h5><a href="https://css-tricks.com/all-about-floats/">Float</a></h5>
+          <img src="img/print-layout.webp" alt="Grid with 5 columns and 3 rows" style="height: 20vh"><img class="fragment" src="img/web-text-wrap.webp" alt="Grid with 5 columns and 3 rows" style="height: 20vh">
+        </section>
+
+        <section>
+          <h3>JavaScript<br><small>by Ecma International</small></h3>
+          <pre><code class="language-js" data-trim>
+            document.querySelector('body').
+              style.backgroundColor = 'rebeccapurple';
+          </code></pre>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<section>
+          <hr>
+          <h1>Old Stuff after this point!</h1>
+          <hr>
+        </section>
+
+
+
+        <section>
+          <h1>Who are you?</h1>
+          <ul>
+            <li>What do you do when you’re not here?</li>
+            <li>What is one fun/<wbr>special/<wbr>interesting fact about you that you’d like us to know?</li>
+            <li>Where do you live?</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>Digital Publication Platforms<span class="fragment">?</span></h1>
+          <p class="fragment">This course will give you everything you need to make informed decisions about where and how to publish content.</p>
+        </section>
+
+        <section>
+          <h2>Course Structure</h2>
+          <table style="font-size: .75em">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Lesson</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2021-10-28</td>
+                <td>19:00</td>
+                <td>L1: Introduction & History</td>
+              </tr>
+              <tr>
+                <td>2021-11-02*</td>
+                <td>19:00</td>
+                <td>L2: HTML, CSS, & the Semantic Web</td>
+              </tr>
+              <tr>
+                <td>2021-11-11</td>
+                <td>19:00</td>
+                <td>L3: Accessibility Principles</td>
+              </tr>
+              <tr>
+                <td>2021-11-18</td>
+                <td>19:00</td>
+                <td>L4: Online Publication Models</td>
+              </tr>
+              <tr>
+                <td>2021-11-23*</td>
+                <td>19:00</td>
+                <td>L5: Publishing Content Across Technologies &amp; Devices</td>
+              </tr>
+              <tr>
+                <td>2021-11-27**</td>
+                <td>09:00</td>
+                <td>L6: Face to Face Lecture in Graz 🇦🇹</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="font-size: .75em;">* Tuesday, ** Saturday</p>
+        </section>
+
+        <section>
+          <h2>Grading</h2>
+          <p>The course is graded as follows:</p>
+          <ul>
+            <li>Default grade of “2” if you attend all lectures, complete all reading, and complete both assignments.</li>
+            <li>Advanced grade of “1” you will need to contact the instructor for one extracurricular assignment.</li>
+            <li>Otherwise, you will receive an unsatisfactory grade.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Assignments</h2>
+          <ol>
+            <li>Watch a talk and write a blog post about it.</li>
+            <li>Create a custom web “business card” for yourself.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Sign up for GitHub</h2>
+          <p><a href="https://github.com">github.com</a></p>
+        </section>
+
+        <section>
+          <h1>History<br>
+          <small>Digital Publication Platforms</small>
+        </h1>
+        <p>Content Strategy 2021<br>Eric Eggert</p>
+        </section>
+
+        <section>
+          <h2>A short history of hypertext and the web</h2>
+        </section>
+
+       <section class="centered">
+         <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%; margin: 0 auto;"><iframe src="https://embed.ted.com/talks/margaret_gould_stewart_how_the_hyperlink_changed_everything" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+       </section>
+
+       <section>
+
+         <figure>
+         <img data-src="img/roytfielding.jpg" style="width:70.0%" alt="Roy T. Fielding presenting at Railsconf"><figcaption>Roy T. Fielding</figcaption>
+         </figure>
+         <p><small><a href="https://www.flickr.com/photos/dwortlehock/1414515559" title="Dr Roy T. Fielding | dwortlehock | Flickr">Picture: Darin Wortlehock 2007, Flickr</a>, <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/" class="photo-license-url" rel="license cc:license">Some Rights Reserved</a>.</small></p>
+
+         <aside class="notes">
+           <p>Roy Thomas Fielding (born 1965) is an American computer scientist, one of the principal authors of the HTTP specification and the originator of the Representational State Transfer (REST) architectural style. He is an authority on computer network architecture and co-founded the Apache HTTP Server project.</p>
+         </aside>
+         </section>
+
+        <section>
+          <blockquote>
+            <p>Hypermedia is defined by the presence of application control information embedded within, or as a layer above, the presentation of information.</p>
+            <cite><a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/web_arch_domain.htm#sec_4_1_3">Architectural Styles and the Design of Network-based Software Architectures</a> by Roy T. Fielding</cite>
+          </blockquote>
+        </section>
+
+        <section>
+          <blockquote>
+            <p>Distributed hypermedia allows the presentation and control information to be stored at remote locations.</p>
+            <cite><a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/web_arch_domain.htm#sec_4_1_3">Architectural Styles and the Design of Network-based Software Architectures</a> by Roy T. Fielding</cite>
+          </blockquote>
+        </section>
+
+        <section>
+          <h1>The Concept of Linked Information</h1>
+        </section>
+
+        <section>
+          <figure>
+          <img alt="Vannevar Bush signing papers" src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Vannevar_Bush_portrait.jpg" data-lazy-loaded=""><figcaption>Vannevar Bush</figcaption>
+          </figure>
+          <p><small class="rights"> Bild: <a href="https://commons.wikimedia.org/wiki/File:Vannevar_Bush_portrait.jpg" title="File:Vannevar Bush portrait.jpg - Wikimedia Commons">Wikimedia Commons</a> This image is a work of the <a href="https://en.wikipedia.org/wiki/United_States_Department_of_the_Treasury" class="extiw" title="w:United States Department of the Treasury">United States Department of the Treasury</a>, taken or made as part of an employee’s official duties. As a work of the <a href="https://en.wikipedia.org/wiki/Federal_Government_of_the_United_States" class="extiw" title="w:Federal Government of the United States">U.S. federal government</a>, the image is in the <a href="https://en.wikipedia.org/wiki/public_domain" class="extiw" title="w:public domain">public domain</a> in the United States. </small></p>
+          </section>
+
+          <section>
+            <h2>Memex</h2>
+            <blockquote>
+              <p>Consider a future device …  in which an individual stores all his books, records, and communications, and which is mechanized so that it may be consulted with exceeding speed and flexibility. It is an enlarged intimate supplement to his memory.</p>
+              <cite><a href="https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/">The Atlantic, July 1945: As We May Think</a></cite>
+            </blockquote>
+          </section>
+
+          <section>
+            <blockquote>
+              <p>All this is conventional, except for the projection forward of present-day mechanisms and gadgetry. It affords an immediate step, however, to associative indexing, the basic idea of which is a provision whereby any item may be caused at will to select immediately and automatically another. … The process of tying two items together is the important thing.</p>
+              <cite><a href="https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/">The Atlantic, July 1945: As We May Think</a></cite>
+            </blockquote>
+          </section>
+
+          <section>
+            <blockquote>
+              <p>The hope is that, in not too many years, human brains and computing machines will be coupled together very tightly, and that the resulting partnership will think as no human brain has ever thought and process data in a way not approached by the information-handling machines we know today.</p>
+              <cite><a href="https://groups.csail.mit.edu/medg/people/psz/Licklider.html">Man-Computer Symbiosis</a> by J.C.R. Licklider</cite>
+            </blockquote>
+          </section>
+
+          <section>
+            <figure>
+            <img alt="Ted Nelson Portrait" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Ted_Nelson.jpg/512px-Ted_Nelson.jpg" style="width: 40%;" data-lazy-loaded=""><figcaption>Ted Nelson</figcaption>
+            </figure>
+            <p><small class="rights">Bild: Gisle Hannemyr, Wikimedia Foundation. This file is licensed under the <a href="https://en.wikipedia.org/wiki/en:Creative_Commons" class="extiw" title="w:en:Creative Commons">Creative Commons</a> <a rel="nofollow" class="external text" href="//creativecommons.org/licenses/by-sa/3.0/deed.en">Attribution-Share Alike 3.0 Unported</a> license.</small></p>
+          </section>
+
+          <section>
+            <h2>Ted Nelson</h2>
+            <ul>
+              <li>Invention of the term “Hypertext”</li>
+              <li>Computers used to implement hypertext</li>
+              <li>Xanadu as a hypertext system</li>
+            </ul>
+          </section>
+
+
+          <section>
+            <blockquote>
+              <p>Let me introduce the word ‘hypertext’ to mean a body of written or pictorial material interconnected in such a complex way that it could not conveniently be presented or represented on paper. It may contain summaries, or maps of its contents and their interrelations; it may contain annotations, additions and footnotes from scholars who have examined it.</p>
+              <cite>Ted Nelson</cite>
+            </blockquote>
+          </section>
+
+
+          <section>
+           <figure>
+             <img style="width:25.0%" alt="Doug Engelbart Portrait" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Douglas_Engelbart_in_2008.jpg" data-lazy-loaded=""><figcaption>Doug Engelbart</figcaption>
+             </figure>
+             <p><small class="rights">Bild: <a href="https://commons.wikimedia.org/wiki/Category:Douglas_Engelbart?uselang=de#/media/File:Douglas_Engelbart_in_2008.jpg" title="Douglas Engelbart in 2008 - Category:Douglas Engelbart – Wikimedia Commons">Alex Handy – Wikimedia Commons</a> <a href="https://creativecommons.org/licenses/by-sa/4.0"><img alt="licensebuttons by-sa" src="https://licensebuttons.net/l/by-sa/3.0/88x31.png" data-lazy-loaded=""></a></small></p>
+          </section>
+
+          <section>
+            <h2><a href="https://dougengelbart.org/content/view/276/">Mother of All Demos</a></h2>
+            <p>(1968)</p>
+          </section>
+
+          <section>
+            <h3>MoAD: The Hardware</h3>
+            <iframe width="75%" title="Click to play video" src="https://youtube.com/embed/OA0ppjh3Or4?start=3&amp;rel=0" allowfullscreen="" style="aspect-ratio: 4 / 3;"></iframe>
+          </section>
+
+          <section>
+            <h3>MoAD: Collaboration</h3>
+            <iframe width="75%" title="Click to play video" src="https://youtube.com/embed/qI8r8D46JOY?start=3&amp;rel=0" allowfullscreen="" style="aspect-ratio: 4 / 3;"></iframe>
+          </section>
+
+          <section>
+            <h2>Hypercard</h2>
+            <iframe width="75%" style="aspect-ratio: 4 / 3;" src="https://www.youtube.com/embed/kZcEZDxIA80?start=243" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </section>
+
+          <section>
+            <h3>Hypercard Features</h3>
+            <ul>
+              <li>Hypertext system on personal computers</li>
+              <li>Linking of images</li>
+              <li>Search</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>HyTime</h2>
+            <ul>
+              <li>Early standard for hypermedia systems</li>
+              <li>Time based hypermedia</li>
+            </ul>
+            <p><a href="http://xml.coverpages.org/hytime.html">Cover Pages: HyTime. ISO 10744:1997 – Hypermedia/Time-based Structuring Language (HyTime), 2nd Edition</a></p>
+          </section>
+
+          <section>
+            <blockquote>
+              <p>What is hypermedia? Hypermedia is the union of two information processing technologies: hypertext and multimedia. Hypertext information is accessed in more than one order. Multimedia information is communicated by more than one means.</p>
+              <cite>C.F. Goldfarb (1991)</cite>
+            </blockquote>
+          </section>
+
+          <section class="centered">
+            <h1 class="r-fit-text">WWW</h1>
+            <p>The World Wide Web</p>
+          </section>
+
+          <section>
+            <iframe width="100%" style="aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/21eFwbb48sE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </section>
+
+          <section>
+            <iframe width="100%" style="aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/NqtMqilPCh0?start=313" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </section>
+
+          <section>
+            <h3>Information Management: A Proposal</h3>
+            <img src="img/info-mgmt.gif" alt="graph of how information management would work">
+          </section>
+
+          <section>
+            <ul>
+              <li>Internet as implementation of hypertext</li>
+              <li>HTML as markup language for hypertext</li>
+              <li>URLs for addressing resources</li>
+              <li>HTTP as protocol for universal hypermedia</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Client-Server Architecture</h3>
+          </section>
+
+          <section>
+            <h4>Early Browsers</h4>
+          </section>
+
+          <section>
+            <h5>“WWW”</h5>
+            <img src="https://home.cern/sites/home.web.cern.ch/files/image/featured/2013/12/birth-web-next-screenshot.png" alt="screenshot of the first web browser" style="height: 55vh;">
+            <p><small>A screenshot of the first web browser, developed by Tim Berners-Lee on a NeXT computer, which was itself called ‘WWW’ (Image: CERN)</small></p>
+          </section>
+
+
+          <section>
+            <h5>Mosaic</h5>
+            <img src="https://www.researchgate.net/profile/Erik_Ranschaert/publication/304300437/figure/fig1/AS:668993757118480@1536511949710/Screenshot-of-the-Mosaic-browser-displaying-the-NCSAs-home-page-The-browser-was.png" alt="screenshot of the mosaic browser" style="height: 55vh;">
+            <p><small>A screenshot of the first web browser, developed by Tim Berners-Lee on a NeXT computer, which was itself called ‘WWW’ (Image: CERN)</small></p>
+          </section>
+
+          <section>
+            <h2>The Architecture of the Web</h2>
+            <img src="https://www.ics.uci.edu/~fielding/pubs/dissertation/uniform_ccss.gif" alt="">
+            <p>Source: <a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm">Fielding Dissertation: CHAPTER 5: Representational State Transfer (REST)</a></p>
+          </section>
+
+          <section>
+            <blockquote>
+              <p>The <strong>key abstraction</strong> of information in REST <strong>is a resource</strong>. Any information that can be named can be a resource: a document or image, a temporal service (e.g. ‘today’s weather in Los Angeles’), a collection of other resources, a non-virtual object (e.g. a person), and so on.</p>
+            </blockquote>
+          </section>
+
+          <section>
+            <blockquote>
+              <p>In other words, any concept that might be the target of an author’s hypertext reference must fit within the definition of a resource. A resource is a conceptual mapping to a set of entities, not the entity that corresponds to the mapping at any particular point in time.</p>
+            </blockquote>
+          </section>
+
+          <section>
+            <h2>The Browser Wars</h2>
+            <img style="height: 35vh; background-color: #fff;" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Browser_Wars_%28en%29.svg" alt="Diagram of browser market share">
+            <p><small class="rights">Picture: <a href="https://commons.wikimedia.org/w/index.php?title=File:Browser_Wars.png&amp;redirect=no" title="File:Browser Wars (en).svg - Wikimedia Commons">Wikimedia Commons</a>. Rights: <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en" title="Creative Commons — Attribution-ShareAlike 3.0 Unported — CC BY-SA 3.0">Creative Commons — Attribution-ShareAlike 3.0 Unported — CC BY-SA 3.0</a></small></p>
+          </section>
+
+
+
+          <section>
+            <h2>Web Standards & the W3C</h2>
+            <ul>
+              <li><a href="https://www.w3.org/" title="World Wide Web Consortium (W3C)">World Wide Web Consortium (W3C)</a></li>
+              <li><a href="https://html.spec.whatwg.org/multipage/" title="HTML Standard">HTML Standard</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Links in native apps</h2>
+            <ul>
+              <li><a href="https://developer.apple.com/ios/universal-links/">Universal Links for Developers - Apple Developer</a></li>
+              <li><a href="https://developer.android.com/training/app-links/index.html">Handling Android App Links | Android Developers</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Linked Data</h2>
+            <blockquote>
+              <p>Linked Data is about using the Web to connect related data that wasn’t previously linked, or using the Web to lower the barriers to linking data currently linked using other methods.</p>
+              <p>More specifically, Wikipedia defines Linked Data as ‘a term used to describe a recommended best practice for exposing, sharing, and connecting pieces of data, information, and knowledge on the Semantic Web using URIs and RDF.’</p>
+              <cite>Tom Heath, <a href="http://linkeddata.org/,%20found%20via%20Teodora%20Petkova:%20%5BWe,%20Linked%20Data%5D(http://www.teodorapetkova.com/poiesis-of-relationships/we-linked-data/)">Linked Data - Connect Distributed Data across the Web</a></cite>
+            </blockquote>
+          </section>
+
+          <section>
+            <p>Example: <a href="https://linkedjazz.org/network/">Linked Jazz</a></p>
+          </section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
