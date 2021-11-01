@@ -308,6 +308,13 @@ html * {
   font-size: .8em;
 }
 
+.reveal li > code,
+.reveal p > code {
+  background-color: #fff;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
 .reveal pre code {
   display: block;
   padding: 5px;
@@ -422,7 +429,7 @@ html * {
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: var(--r-link-color);
+  color: var(--color-code-red);
 }
 
 /*********************************************
@@ -430,7 +437,7 @@ html * {
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: var(--r-link-color);
+  color: var(--color-code-red);
 }
 
 /*********************************************
