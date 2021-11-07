@@ -1,0 +1,597 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Accessibility Principles – Digital Publication Platforms</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/yatil.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/a11y-dark.css">
+	</head>
+	<body>
+		<div class="reveal">
+
+			<div class="slides">
+
+        <section class="centered">
+          <h1>
+            Accessibility Principles
+            <br>
+            <small>Digital Publication Platforms</small>
+          </h1>
+          <p>Content Strategy 2021<br>Eric Eggert</p>
+        </section>
+
+        <section>
+          <h1>Web Standards</h1>
+        </section>
+
+        <section>
+          <h2>Resources</h2>
+          <ul>
+            <li>Most resources are from W3C WAI</li>
+            <li>W3C = World Wide Web Consortium</li>
+            <li>WAI = Web Accessibility Initiative = the arm that facilitates accessibility</li>
+            <li>Free and Open!</li>
+          </ul>
+          <img src="assets/w3cwai-horizontal.svg" role="img" alt="W3C/WAI Resource">
+        </section>
+
+        <section>
+          <h2>Why advocate for accessible design?</h2>
+          <ul>
+            <li>Drive Innovation</li>
+            <li>Increase Market Reach</li>
+            <li>Minimize Leagal Risk</li>
+            <li>Humanitarian</li>
+          </ul>
+          <aside class="notes">
+
+            <p><strong>Demographics:</strong></p>
+            <ul>
+              <li>Disability is age related.  More seniors are online, many aging baby-boomers expect technology to work for them.  While disability is often associated with poverty, as people live longer, there is a prosperous group of consumers who require accommodation.  It is a market that should not be ignored.</li>
+              <li>Some people are born with disability.</li>
+              <li>Some people get sick or have an accident .</li>
+              <li>Some people develop disability as they age.</li>
+              <li>“The reality is that just about everyone – women, men and children of all races and ethnicities – will experience a disability at some time during his or her lifetime.”</li>
+            </ul>
+
+            <p><strong><a href="http://www.hhs.gov/od/about/fact_sheets/whatisdisability.html">US HHS Office on Disability</a></strong></p>
+            <ul>
+              <li>Number of people with disabilities is growing</li>
+              <li>55 million Americans / 1 billion worldwide</li>
+            </ul>
+
+            <p><strong>Fortune:</strong></p>
+            <ul>
+              <li>“$1 trillion annual market” in US</li>
+              <li>$200 billion in discretionary spending</li>
+              <li>Increasing as population ages</li>
+            </ul>
+
+            <p><strong>Also:</strong></p>
+            <ul>
+              <li>Improved technical performance</li>
+              <li>Harmonize with global standards</li>
+              <li>Internationalization</li>
+              <li>Demonstrated ROI</li>
+              <li>Responsive design</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Driving Innovation</h3>
+          <p>Integrating accessibility removes architectural, digital, and social barriers:</p>
+          <ul>
+            <li>Accessible design thinking: flexible ways for users to interact with websites &amp; apps</li>
+            <li>Consideration of experiences other than screens</li>
+            <li>Closely aligns with good usability</li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Driving Innovation: Examples</h4>
+          <ul>
+            <li>Typewriters</li>
+            <li>Telephone</li>
+            <li>Punch cards</li>
+            <li>Text to speech</li>
+            <li>Email</li>
+            <li>Voice controls</li>
+            <li>Driverless cars</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Increased Market Reach</h3>
+          <ul>
+            <li><strong>15% of the world’s population</strong> have a recognized disability</li>
+            <li>With age, many more acquire disabilities and yet might not identify as a “person with a disability”</li>
+            <li>In countries with 70+ years life expectancy, people spend 11.5% of their lifespan with a disability</li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Increased Market Reach: Globally</h4>
+          <p>The extended market is estimated at 2.3 billion people who control an incremental $6.9 trillion in annual disposable income</p>
+          <p class="r-fit-text fragment">$6,900,000,000,000</p>
+        </section>
+
+        <section>
+          <h3>Legislation</h3>
+          <ul>
+            <li>UN Convention on Rights of People with Disabilities (UN CRPD)</li>
+            <li>On the Web: Web Content Accessibility Guidelines (WCAG)</li>
+            <li>European Standard: <span class="tnums">EN 301 549</span></li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Austria</h4>
+          <ul>
+            <li>2006: <a href="https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20004228">Bundes-Behindertengleichstellungsgesetz (BGStG)</a></li>
+            <li>2019: Web-Zugänglichkeits-Gesetz (WZG)</li>
+          </ul>
+        </section>
+
+      <section>
+        <h3 class="wai-resource-header"><img src="assets/w3cwai-horizontal.svg" role="img" alt="W3C/WAI Resource" style="display: block;float:left; margin-right: .25em;"><a href="https://www.w3.org/WAI/business-case/">The Business Case for Digital Accessibility</a></h3>
+        <p>This article examines the rationale for organizations to address accessibility. It includes tangible and intangible benefits, and the risks of not addressing accessibility adequately.</p>
+      </section>
+
+      <section>
+        <h3>Accessibility</h3>
+        <p>People with disabilities</p>
+        <ul>
+          <li>…can acquire the same information</li>
+          <li>…participate in the same activities</li>
+          <li>…be active producers as well as consumers</li>
+        </ul>
+        <aside class="notes">
+          <p>We often talk of accessibility in terms of adherence to standards.  It is good to remember that accessibility is about inclusive design for real people with human needs</p>
+        </aside>
+      </section>
+
+      <section data-background-iframe="https://www.youtube.com/embed/3f31oufqFSM"></section>
+
+      <section>
+        <h3>Assistive Technologies (AT)</h3>
+        <div class="two columns">
+          <div>
+            <p>Tools that support daily tasks of living and communication.</p>
+          </div>
+          <div>
+            <img src="img/assistive-technology.jpg" alt="Boxes of old assistive technologies, like old versions of Jaws and Zoomtext, joysticks and buttons">
+          </div>
+        </div>
+        <aside class="notes">
+          <p>People with certain types of disabilities use specialized tools in order to access and convey information.  These specialized tools are called assistive technology. </p>
+          <p>Some examples of assistive technology would be <strong>text-to-speech</strong> or <strong>screen readers</strong>, <strong>large print software</strong>, <strong>alternative keyboards and mice</strong>, <strong>communication devices</strong>, etc.</p>
+          <p>There are many types and varieties of assistive technology tools.</p>
+        </aside>
+      </section>
+
+      <section>
+        <h4>AT alone <strong>cannot</strong> provide access</h4>
+        <ul>
+          <li>No matter how hard you work, or how sophisticated your Assistive Technology may be, AT alone cannot provide access </li>
+          <li>Equal access requires that digital content is developed to meet global accessibility standards</li>
+        </ul>
+        <aside class="notes">
+          <p>But assistive technology by itself, cannot guarantee access to the curriculum.  In order for assistive technologies to work as they are designed to work, they need to interface with content that been designed to meet accessibility standards.</p>
+        </aside>
+      </section>
+
+      <section>
+        <h4>AT & Accessibility APIs: How one content meets many needs</h4>
+        <ul>
+          <li>AT is software or hardware that addresses particular needs</li>
+          <li>Accessibility Application Program Interface (API) translates between AT to other software</li>
+          <li>AT can modify the user interface</li>
+        </ul>
+        <aside class="notes">
+          <p>This model was developed to mitigate the Graphical User Interface which inadvertently excluded the blind from using systems with this interface.</p>
+          <p>Every operating system has an Accessibility API.  Instead of just sending pictures of text to the computer screen and reacting to mouse clicks, software now sends and receives encodings of the content to and from the Accessibility API.  What is passed through assistive technology is the correct model input / output needed by the user.
+            </p>
+        </aside>
+      </section>
+
+      <section>
+        <h4>Accessible IT Model</h4>
+        <div class="two columns">
+        <p style="text-align: center; line-height: 1;">Your Content<br>↕<br>Application/Browser<br>↕<br>Accessibility API<br>↕<br>Assistive Technology<br>↕<br>Platform User Interface</p>
+        <p>This system works only if your content is accessible.</p>
+        </div>
+
+        <aside class="notes">
+          <p>The Output path:</p>
+          <ul>
+            <li><strong>Your Content</strong> – Can provides enough information so that the application/browser can determine all information, structures and relationships.</li>
+            <li><strong>Application/Browser</strong> – In addition to rendering the presentation for main stream user, the Application / Browser encodes all the information, structures and relationships expressed in the Content and passes this encoding to the Accessibility API</li>
+            <li><strong>Accessibility API</strong> – The Accessibility API takes information from all applications including browsers puts it all in a consistent format and passes it to the Assistive Technology.</li>
+            <li><strong>Assistive Technology (AT)</strong> – The AT takes Accessibility API data translates it into a different format (Braille, Voice, Large Print) and sends to the Platform UI</li>
+            <li><strong>Platform User Interface</strong> – This phase just routes the information to the appropriate devices.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section>
+        <h4>Flexibility is the key</h4>
+        <div class="two columns">
+        <p style="text-align: center; line-height: 1;">Your Content<br>↕<br>Application/Browser<br>↕<br>Accessibility API<br>↕<br>Assistive Technology<br>↕<br>Platform User Interface</p>
+        <p>This system works only if your content is accessible.</p>
+        </div>
+
+        <aside class="notes">
+          <p>For example, a standard computer will have a screen, a keyboard, and mouse, but not everyone is able to use all of those components.  A person with a physical and/or visual disability may not be able to use a mouse and may have to access content by only using a keyboard. The same can be said for touch technologies.  Not everyone is able to use touch gestures.  Alternative means of access need to be available to people who have different needs.</p>
+        </aside>
+
+      </section>
+
+      <section>
+        <h2>People</h2>
+        <p>Put people first when thinking about digital accessibility</p>
+      </section>
+
+      <section>
+        <h3>d/Deaf &amp; Hard of Hearing</h3>
+        <ul>
+          <li>Transcripts for audio content</li>
+          <li>Alternatives for sound cues</li>
+          <li>Captioned multimedia</li>
+          <li>Audio support (human voice recording, assistive listening systems, etc.)</li>
+          <li>Real-time computer-aided transcription services (e.g. CART)</li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h3>Learning and Cognitive Disabilities</h3>
+        <ul>
+          <li>Stable content</li>
+          <li>Plain language</li>
+          <li>Consistent naming, layout, and navigation</li>
+          <li>AT-readable text</li>
+          <li>Personalized (customizable) visual presentation (typeface, colors, white space)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Communication Disabilities</h3>
+        <ul>
+          <li>Picture Communication Symbols  (Augmentative Systems)</li>
+          <li>AT mapped to keyboard</li>
+          <li>Scanning technologies</li>
+          <li>Access to electronic text</li>
+          <li>Clear labels for page regions and interactions </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Physical/motor disabilities</h3>
+        <ul>
+          <li>Keyboard access</li>
+          <li>Visible focus</li>
+          <li>Keyboard alternatives</li>
+          <li>Customizable keyboard commands</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Blind and Visually Impaired</h3>
+        <ul>
+          <li>Alternatives to image content</li>
+          <li>Mouse-free navigation
+          <ul>
+            <li>Avoid drag and drop</li>
+            <li>Tab logic, navigation</li>
+            <li>Test item selection</li>
+          </ul>
+          </li>
+          <li>Color cues</li>
+          <li>Proper structural markup</li>
+          <li>Accessible CMS</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 class="wai-resource-header"><img src="assets/w3cwai-horizontal.svg" role="img" alt="W3C/WAI Resource" style="display: block;float:left; margin-right: .25em;"><a href="https://www.w3.org/WAI/people-use-web/">How People with Disabilities Use the Web</a></h3>
+        <p>This resource introduces how people with disabilities use the Web. It describes tools and approaches that they use to browse the Web overcome encountered barriers.</p>
+      </section>
+
+      <section>
+        <h2>Standards &amp; Guidelines</h2>
+      </section>
+
+      <section>
+        <h3>For web accessibility: W3C</h3>
+        <ul>
+          <li>
+            WCAG — Web Content Accessibility Guidelines
+            <br><small>Standard for web content creation</small>
+          </li>
+          <li>
+            ATAG — Authoring Tool Accessibility Guidelines
+            <br><small>Standard for web content creation interfaces</small>
+          </li>
+          <li>
+            UAAG – User Agent Accessibility Guidelines
+            <br><small>Standard for web content consumption interfaces</small>
+          </li>
+          <li>
+            ARIA – Accessible Rich Internet Applications
+            <br><small>Standard for creating accessible application on top of other standards</small>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h4>Web standards interaction</h4>
+        <img src="img/specs.png" alt="The aforementioned specifications and how they interact.">
+        <aside class="notes">
+          <p>Assure your tech team and in-house web developers that they do not need to meet the requirements all alone.  People from all over the world have been working collaboratively within the W3C for decades to make sure that all components work together and operate from common principles and API’s.  This slide demonstrates that developers can use tools to create and test web sites.  Many of those tools conform to W3C Authoring Tool (ATAG) Guidelines.  Meanwhile, related Guidelines are developed for common web programming languages and issued as Web Content Accessibility Guidelines (WCAG).  To bring those programs to the user, guidelines are in place for browsers and assistive technology devices and are called User Agent Accessibility Guidelines (UAAG).  Working together, these practices ensure harmony among the many hardware and software devices involved in creating the Web as we know it.</p>
+          <p>The Guidelines have been developed through a consensual process to work together:</p>
+          <p>Web Content Accessibility Guidelines (WCAG)</p>
+          <p>Others are responsible too:</p>
+          <p>Authoring Tool Accessibility Guidelines (ATAG) are rules for companies that create software like Dreamweaver and FrontPage.</p>
+          <p>User Agent Accessibility Guidelines (UAAG) are rules for people who create user agents, like browsers (for example, Firefox and Internet explorer) and assistive technology, like screenreaders.</p>
+        </aside>
+      </section>
+
+      <section>
+        <h3>Web Content Accessibility Guidelines (WCAG) 2.1</h3>
+        <p>W3C Recommendation 05 June 2018</p>
+        <p>Previous version: 2.0, 11 December 2008</p>
+        <p>Next version: 2.2, 2022?</p>
+      </section>
+
+      <section>
+        <h4>Web Content Accessibility Guidelines (WCAG)</h4>
+        <p>Based on four foundational “POUR Principles”:</p>
+        <ol>
+          <li>Perceivable</li>
+          <li>Operable</li>
+          <li>Understandable</li>
+          <li>Robust</li>
+        </ol>
+      </section>
+
+      <section>
+        <h4>WCAG 2 Structure</h4>
+        <ul>
+          <li>WCAG 2.1 stable, referenceable technical standard.</li>
+          <li>13 guidelines organized under 4 principles</li>
+          <li>Guideline has testable success criteria (SCs) at three levels</li>
+          <li>Supporting material: Understanding WCAG & Techniques for WCAG</li>
+        </ul>
+      </section>
+
+      <section>
+        <h5>1. Perceivable</h5>
+        <p>Information and user interface components must be presentable to users in ways they can perceive.</p>
+        <hr>
+        <ul>
+          <li>Text alternatives for non-text content. </li>
+          <li>Captions and other alternatives for multimedia. </li>
+          <li>Content can be presented in different ways, including by assistive technologies, without losing meaning. </li>
+          <li>Make it easier for users to see and hear content. </li>
+        </ul>
+        <aside class="notes">
+          <p>Perceivable means that information and user interface components must be presentable to users in ways they can perceive. This would include text alternatives, captions, alternative means of presentation, and making it easier for users to see and hear content.</p>
+        </aside>
+      </section>
+
+      <section>
+        <h5>2. Operable</h5>
+        <p>User interface components and navigation must be operable.</p>
+        <hr>
+        <ul>
+          <li>Make all functionality available from a keyboard. </li>
+          <li>Give users enough time to read and use content. </li>
+          <li>Do not use content that causes seizures. </li>
+          <li>Help users navigate and find content. </li>
+        </ul>
+        <aside class="notes">
+          <p>Operable means that the user interface components and navigation must be operable by all users. This would include making all functions available from a keyboard, giving users adequate time to read content, avoiding flashing content that might cause seizures, and helping users navigate and find content.</p>
+        </aside>
+      </section>
+
+      <section>
+        <h5>3. Understandable</h5>
+        <p>Information and the operation of user interface must be understandable.</p>
+        <hr>
+        <ul>
+          <li>Make text readable and understandable. </li>
+          <li>Make content appear and operate in predictable ways. </li>
+          <li>Help users avoid and correct mistakes.</li>
+        </ul>
+        <aside class="notes">
+          <p>Understandable means that information and the operation of the user interface must be understandable to all users.  This would mean that text is readable, content operates in a predictable manner, and users have support to avoid and correct mistakes.</p>
+        </aside>
+      </section>
+
+      <section>
+        <h5>4. Robust</h5>
+        <p>Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.</p>
+        <hr>
+        <ul>
+          <li>Use standard, valid coding methods and practices.</li>
+          <li>Maximize compatibility with current and future user tools.</li>
+        </ul>
+        <aside class="notes">
+          <p>Perceivable means that information and user interface components must be presentable to users in ways they can perceive. This would include text alternatives, captions, alternative means of presentation, and making it easier for users to see and hear content.</p>
+        </aside>
+      </section>
+
+      <section>
+        <h4 class="r-fit-text centered"><strong>Principles & Guidelines:</strong> <br>The Spirit of the Law</h4>
+      </section>
+
+      <section>
+        <h4 class="r-fit-text centered"><strong>Success Criteria:</strong> <br>The Letter of the Law</h4>
+      </section>
+
+      <section>
+        <h4 class="r-fit-text centered"><strong>3 Levels:</strong> <br><strong>A – AA</strong> – AAA</h4>
+      </section>
+
+      <section>
+        <h4>Levels of Conformance</h4>
+        <ul>
+          <li><strong>A – Most people with disabilities have good access.</strong></li>
+          <li><strong>AA – Most people with disabilities encounter no barriers.</strong></li>
+          <li>AAA – Most people with disabilities encounter no barriers, and more barriers are removed.</li>
+        </ul>
+        <p>To conform to AA, you must conform to all Success Criteria marked Level A and AA.</p>
+      </section>
+
+      <section>
+        <h4 class="centered" style="font-size: 5em;"><strong>AA+</strong></h4>
+        <p>AA plus AAA criteria that specifically enhance the experience for your audience.</p>
+      </section>
+
+      <section>
+        <h4>In addition: WCAG Understanding</h4>
+        <p>Pages and pages of additional information on how to understand the different Success Criteria.</p>
+      </section>
+
+      <section>
+        <h4>In addition: WCAG Techniques</h4>
+        <p>Pages and pages of examples to meet or fail a specific Success Criteria.</p>
+      </section>
+
+      <section>
+        <h3 class="wai-resource-header"><img src="assets/w3cwai-horizontal.svg" role="img" alt="W3C/WAI Resource"><a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) Overview</a></h3>
+        <p>Introducing the Web Content Accessibility Guidelines (WCAG), including WCAG 2.0 and WCAG 2.1.</p>
+      </section>
+
+      <section>
+        <h3 class="wai-resource-header"><img src="assets/w3cwai-horizontal.svg" role="img" alt="W3C/WAI Resource"><a href="https://www.w3.org/WAI/standards-guidelines/atag/">Authoring Tool Accessibility Guidelines (ATAG) Overview</a></h3>
+      </section>
+
+      <section>
+        <h3 class="wai-resource-header"><img src="assets/w3cwai-horizontal.svg" role="img" alt="W3C/WAI Resource"><a href="https://www.w3.org/WAI/standards-guidelines/uaag/">User Agent Accessibility Guidelines (ATAG) Overview</a></h3>
+      </section>
+
+      <section>
+        <h3 class="wai-resource-header"><img src="assets/w3cwai-horizontal.svg" role="img" alt="W3C/WAI Resource"><a href="https://www.w3.org/WAI/standards-guidelines/aria/">WAI-ARIA Overview</a></h3>
+        <p>WAI-ARIA defines a way to make Web content and Web applications more accessible to people with disabilities. It especially helps with dynamic content and advanced user interface controls.</p>
+      </section>
+
+      <section>
+        <h2>Testing</h2>
+        <h3 class="wai-resource-header"><img src="assets/w3cwai-horizontal.svg" role="img" alt="W3C/WAI Resource"><a href="https://www.w3.org/WAI/test-evaluate/preliminary/">Easy Checks: A First Review of Web Accessibility</a></h3>
+      </section>
+
+      <section>
+        <h3>Different testing methods</h3>
+        <ul>
+          <li>Automated testing</li>
+          <li>Manual/exploratory testing</li>
+        </ul>
+      </section>
+
+      <section>
+        <h4>Automated testing</h4>
+        <ul>
+          <li>Can find about 50% of issue types</li>
+          <li>Some issues are impossible to find automatically</li>
+        </ul>
+      </section>
+
+      <section>
+        <h5>Automated testing tools</h5>
+        <ul>
+          <li><a href="https://www.deque.com/axe/browser-extensions/">axe Extension for Chrome, Firefox, Edge</a></li>
+          <li><a href="https://wave.webaim.org/">WAVE — Web Accessibility Evaluation Tool</a></li>
+          [WAVE](https://wave.webaim.org/) — Web Accessibility Evaluation Tool
+        </ul>
+      </section>
+
+      <section>
+        <h5>Design Tools</h5>
+        <ul>
+          <li><a href="https://contrast-ratio.com">Contrast-Ratio.com</a> — Color contrast calculation</li>
+          <li><a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a></li>
+          <li><a href="https://whocanuse.com/">Who Can Use</a> — Color contrast checker with vision type simulator</li>
+          <li><a href="https://trace.umd.edu/peat/">Photosensitive Epilepsy Analysis Tool (PEAT)</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h5>Manual testing tools</h5>
+        <ul>
+          <li><a href="https://a11y-tools.com/bookmarklets/">A11Y Tools Bookmarklets</a> — Several Bookmarklets</li>
+          <li><a href="https://www.ssa.gov/accessibility/andi/help/howtouse.html">ANDI</a> —  Accessible Name & Description Inspector</li>
+          <li><a href="https://www.deque.com/axe/browser-extensions/">axe Extension for Chrome, Firefox, Edge</a></li>
+          <li><a href="https://chrispederick.com/work/web-developer/">Chris Pederick’s Web Developer</a> — various tools</li>
+          <li><a href="https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi">Headings Map Chrome Extension</a> or Headings Map for other browsers</li>
+        </ul>
+        </section>
+
+        <section>
+          <h5>Manual testing tools (II)</h5>
+        <ul>
+          <li><a href="https://squizlabs.github.io/HTML_CodeSniffer/">HTML_CodeSniffer</a> — Code checker</li>
+          <li><a href="https://metageeky.github.io/accessibility-bookmarklet/">Metageeky’s A11Y Bookmarklets</a></li>
+          <li><a href="https://pauljadam.com/bookmarklets.html">Paul J. Adam Bookmarklets and <a href="https://pauljadam.com/extension.html">Browser Extension for macOS</a> — An assortment of bookmarklets to visualize different accessibility features.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h5>Manual testing tools (III)</h5>
+        <ul>
+          <li><a href="https://codepen.io/yatil/pen/bGVmNdY">Target Size Bookmarklet</a></li>
+          <li><a href="http://html5accessibility.com/tests/tsbookmarklet.html">Text-spacing bookmarklet</a></li>
+          <li><a href="http://whatsock.com/training/matrices/visual-aria.htm">The Visual ARIA Bookmarklet</a></li>
+          <li><a href="https://khan.github.io/tota11y/">tota11y</a> — an accessibility visualization toolkit</li>
+        </ul>
+      </section>
+
+      <section>
+        <h5>Mixed automatic/manual</h5>
+        <ul>
+          <li><a href="https://accessibilityinsights.io/">Accessibility Insights</a> — automated checks and walk through tools and checklist</li>
+        </ul>
+      </section>
+
+      <section>
+        <h5>Testing with assistive technologies</h5>
+        <ul>
+          <li><a href="https://assistivlabs.com/">Assistive Labs</a></li>
+          <li>
+            Screen reader shortcuts
+            <ul>
+              <li><a href="https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts">VoiceOver</a></li>
+              <li><a href="https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts#nvda-nvda_shortcut_keys">NVDA</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

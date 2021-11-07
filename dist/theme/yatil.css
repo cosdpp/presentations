@@ -500,3 +500,6 @@ html * {
   text-underline-offset: 2px;
   text-decoration-thickness: 4px;
 }
+
+.wai-resource-header { display: flex; align-items: flex-start; font-size: 1.5em !important; }
+.wai-resource-header img { margin-right: .25em !important; }
