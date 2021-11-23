@@ -1,0 +1,396 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Publishing across devices and technologies – Digital Publication Platforms</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/yatil.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/a11y-dark.css">
+	</head>
+	<body>
+		<div class="reveal">
+
+			<div class="slides">
+
+        <section class="centered">
+          <h1>
+            Publishing across devices and technologies
+            <br>
+            <small>Digital Publication Platforms</small>
+          </h1>
+          <p>Content Strategy 2021<br>Eric Eggert</p>
+        </section>
+
+        <section>
+          <h2>Web vs. App</h2>
+        </section>
+
+        <section>
+          <h3>Web</h3>
+          <ul>
+            <li>Open, linkable</li>
+            <li>Inspect source code</li>
+            <li>Self-hosting possibility</li>
+            <li>Direct customer relationship</li>
+            <li>Second-class citizen on mobile</li>
+            <li>No commission</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Apps</h3>
+          <ul>
+            <li>Closed, harder to link into</li>
+            <li>Source code obfuscated</li>
+            <li>3rd-party distribution (with some exceptions)</li>
+            <li>Indirect customer relationship</li>
+            <li>First-class citizen on mobile</li>
+            <li>15&thinsp;%–30&thinsp;% commission</li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Apps advantages</h4>
+          <ul>
+            <li>Promotion in app stores</li>
+            <li>Integration into device features</li>
+            <li>Access to notifications</li>
+            <li>Possibilities for personalization</li>
+            <li>Sometimes more performant</li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Apps disadvantages</h4>
+          <ul>
+            <li>Every platform needs their own app</li>
+            <li>Sometimes it is needed to publish in different app stores</li>
+            <li>Updates of the core app go through review process</li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>App review “scandals”</h4>
+          <blockquote>
+            <p>One of the apps […] updated for iOS 8 […]and approved[…] was <strong>PCalc</strong>, which effectively created a basic calculator that worked in Notification Center. It got a lot of media attention, and […] Apple <strong>featured</strong> [it] in the App Store’s <strong>“Great Apps for iOS 8”</strong> collection. But at the same time […] App Review had changed their mind and told the developer […] to <strong>remove the widget</strong> as it <strong>breached the App Store Review Guidelines</strong>.</p>
+            <cite>MacStories: <a href="https://www.macstories.net/stories/developers-apples-app-review-needs-big-improvements/">Developers: Apple’s App Review Needs Big Improvements</a>, March 2016</cite>
+          </blockquote>
+        </section>
+
+        <section>
+          <h4>Fortnite vs. Apple</h4>
+          <blockquote>
+            <p>In hindsight, the series of events that unfolded today appear to be part of a carefully orchestrated plan leading to the filing of the lawsuit. The day began with Epic offering in-game currency at a discount in the iOS version of the game using Epic’s own payment system in clear violation of App Store guidelines.</p>
+            <cite>MacStories: <a href="https://www.macstories.net/news/fortnite-developer-epic-games-sues-apple-alleging-anti-competitive-app-store-and-payment-processing-behavior/">Developers: Fortnite Developer Epic Games Sues Apple Alleging Anti-Competitive App Store and Payment Processing Behavior</a>, August 2020</cite>
+          </blockquote>
+        </section>
+
+        <section>
+          <h4>Fortnite vs. Apple (2)</h4>
+          <blockquote>
+            <p>[… A]fter the game was pulled from the App Store by Apple, Epic filed a 62-page lawsuit in the United States District Court for the Northern District of California alleging violations of the federal Sherman Act and a similar California state statute.</p>
+            <cite>MacStories: <a href="https://www.macstories.net/news/fortnite-developer-epic-games-sues-apple-alleging-anti-competitive-app-store-and-payment-processing-behavior/">Developers: Fortnite Developer Epic Games Sues Apple Alleging Anti-Competitive App Store and Payment Processing Behavior</a>, August 2020</cite>
+          </blockquote>
+        </section>
+
+        <section>
+          <h4>Fortnite vs. Apple (3)</h4>
+          <blockquote>
+            <p>The result [of the law suit] largely favors Apple, to the extent that Apple released a statement declaring victory[.]</p>
+            <p>Perhaps most notably, Epic has to pay Apple its cut of transactions that bypassed Apple’s in-app purchase system and is still banned from the App Store, and the judge has defined the market in question […] as ‘digital mobile gaming transactions’—rather than […] ‘iPhone transactions.’</p>
+            <cite>SixColors: <a href="https://sixcolors.com/post/2021/09/apple-bests-epic-but-change-is-coming-to-the-app-store/">Apple bests Epic, but change is coming to the App Store</a>, September 2021</cite>
+          </blockquote>
+        </section>
+
+
+        <section>
+          <h3>Web Applications</h3>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vKKISOnOCaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section>
+          <h3>Progressive Web Applications (PWA)</h3>
+          <blockquote>
+            <p>PWAs give us the ability to create web apps that can enjoy these same advantages[ as native apps].</p>
+            <cite><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Introduction">MDN</a></cite>
+          </blockquote>
+        </section>
+
+        <section>
+          <h4>PWA functionality</h4>
+          <ul>
+            <li>Discoverability</li>
+            <li>Installability</li>
+            <li>Linkability</li>
+            <li>Network independence (offline)</li>
+            <li>Progressive enhancement support</li>
+            <li>Re-engageability (pushing content, notifications)</li>
+            <li>Responsiveness</li>
+            <li>Secure</li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Browser support: Service Workers</h4>
+          <p class="ciu_embed" data-feature="serviceworkers" data-periods="future_1,current,past_1"> <picture> <source type="image/webp" srcset="https://caniuse.bitsofco.de/image/serviceworkers.webp"> <source type="image/png" srcset="https://caniuse.bitsofco.de/image/serviceworkers.png"> <img src="https://caniuse.bitsofco.de/image/serviceworkers.jpg" alt="Data on support for the serviceworkers feature across the major browsers from caniuse.com"> </picture></p>
+        </section>
+
+        <section>
+          <h4>Browser support: Web App Manifest</h4>
+          <p>Partially supported.</p>
+        </section>
+
+        <section>
+          <h4>Browser support: Push API</h4>
+          <p class="ciu_embed" data-feature="push-api" data-periods="future_1,current,past_1" data-accessible-colours="false"> <picture> <source type="image/webp" srcset="https://caniuse.bitsofco.de/image/push-api.webp"> <source type="image/png" srcset="https://caniuse.bitsofco.de/image/push-api.png"> <img src="https://caniuse.bitsofco.de/image/push-api.jpg" alt="Data on support for the push-api feature across the major browsers from caniuse.com"> </picture> </p>
+        </section>
+
+        <section>
+          <h4>Browser support: Web Notifications</h4>
+          <p class="ciu_embed" data-feature="notifications" data-periods="future_1,current,past_1" data-accessible-colours="false"> <picture> <source type="image/webp" srcset="https://caniuse.bitsofco.de/image/notifications.webp"> <source type="image/png" srcset="https://caniuse.bitsofco.de/image/notifications.png"> <img src="https://caniuse.bitsofco.de/image/notifications.jpg" alt="Data on support for the notifications feature across the major browsers from caniuse.com"> </picture> </p>
+        </section>
+
+        <section>
+          <h4>Browser support: Add to home screen (A2HS)</h4>
+          <p class="ciu_embed" data-feature="web-app-manifest" data-periods="future_1,current,past_1" data-accessible-colours="false"> <picture> <source type="image/webp" srcset="https://caniuse.bitsofco.de/image/web-app-manifest.webp"> <source type="image/png" srcset="https://caniuse.bitsofco.de/image/web-app-manifest.png"> <img src="https://caniuse.bitsofco.de/image/web-app-manifest.jpg" alt="Data on support for the web-app-manifest feature across the major browsers from caniuse.com"> </picture> </p>
+        </section>
+
+        <section>
+          <h2>Web vs. App?</h2>
+          <p>Both are great options for “real” applications, the web has a leg up for consuming content.</p>
+        </section>
+
+
+        <section>
+          <h2>Responsive Web Design</h2>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            > Rather than <strong>tailoring disconnected designs to each of an ever-increasing number of web devices</strong>, we can <strong>treat them as facets of the same experience</strong>. We can design for an optimal viewing experience, but embed standards-based technologies into our designs to make them not only more flexible, but more adaptive to the media that renders them. In short, we need to practice responsive web design.
+
+            <cite>Ethan Marcotte, [Responsive Web Design](https://alistapart.com/article/responsive-web-design), A List Apart, May 25, 2010</cite>
+
+            ---
+
+            ![A lot of different output devices from laptops to smartphones (fit)](img/different-devices.jpg)
+
+            ---
+
+            ## Embrace the web medium
+
+            > The control which designers know in the print medium, and often desire in the web medium, is simply […] the limitation of the printed page. We should embrace the fact that the web doesn't have the same constraints, and design for this flexibility.
+
+            <cite>John Allsopp, [A List Apart: A Dao of Web Design](http://www.alistapart.com/articles/dao), April 07, 2000</cite>
+
+            ---
+
+            ![Mobile First: A glass of water that fits nicely on a computer screen does not fit on smaller devices. A glass of water that fits into a small device fits easily into the larger devices.](img/mobile-first.jpg)
+          </textarea>
+        </section>
+
+        <section>
+          <h2>Images for Responsive Design</h2>
+        </section>
+
+        <section>
+          <h3>Use cases:</h3>
+          <ul>
+            <li>Resolution/Density Switching</li>
+            <li>Art Direction</li>
+          </ul>
+          <p>(More defined by <a href="https://usecases.responsiveimages.org/">RICG</a>.)</p>
+        </section>
+
+        <section data-markdown>
+            <textarea data-template>
+              ### 1. Resolution/Density Switching
+
+              ---
+
+              ![fit](img/resolution-switching.jpg)
+
+              ---
+
+              #### Resolution Examples
+
+              ppi = pixel per inch
+
+              ---
+
+              ![](img/iphone-1.jpg)
+
+              iPhone 1, 3G, 3GS: 320×480px @ ~165ppi
+
+              ---
+
+              ![](img/iphone-4.jpg)
+
+              iPhone 4 & 4s: 640×960px @ ~330ppi (**=2×**)
+
+              ---
+
+
+              ![](img/iphone-6-plus.jpg)
+
+              iPhone 6 Plus, 6s Plus, 7 Plus, 8 Plus: 1080×1920px @ ~401ppi (**=3×**)
+
+</textarea>
+</section>
+
+<section>
+  <table style="border: 2px solid #000;">
+    <tr style="border: none;">
+      <td style="vertical-align: center; text-align:center; border: none; height: 10vh; width: 10vh;"></td>
+      <td style="vertical-align: center; text-align:center; border: none; height: 10vh; width: 10vh;"></td>
+      <td style="vertical-align: center; text-align:center; border: none; height: 10vh; width: 10vh;"></td>
+    </tr>
+    <tr style="border: none;">
+      <td style="vertical-align: center; text-align:center; border: none; height: 10vh; width: 10vh;"></td>
+      <td style="vertical-align: center; text-align:center; border: none; height: 10vh; width: 10vh;">1 Pixel</td>
+      <td style="vertical-align: center; text-align:center; border: none; height: 10vh; width: 10vh;"></td>
+    </tr>
+    <tr style="border: none;">
+      <td style="vertical-align: center; text-align:center; border: none; height: 10vh; width: 10vh;"></td>
+      <td style="vertical-align: center; text-align:center; border: none; height: 10vh; width: 10vh;"></td>
+      <td style="vertical-align: center; text-align:center; border: none; height: 10vh; width: 10vh;"></td>
+    </tr>
+  </table>
+</section>
+
+<section>
+    <table style="border: 2px solid #000;">
+      <tr style="border: none;">
+        <td style="vertical-align: center; text-align:center; border: 2px solid #000; height: 15vh; width: 15vh;"></td>
+        <td style="vertical-align: center; text-align:center; border: 2px solid #000; height: 15vh; width: 15vh;"></td>
+      </tr>
+      <tr style="border: 2px solid #000;">
+        <td style="vertical-align: center; text-align:center; border: 2px solid #000; height: 15vh; width: 15vh;"></td>
+        <td style="vertical-align: center; text-align:center; border: 2px solid #000; height: 15vh; width: 15vh;"></td>
+      </tr>
+    </table>
+  </section>
+
+<section>
+  <table style="border: 2px solid #000;">
+        <tr style="border: none;">
+          <td style="vertical-align: center; text-align:center; border: 2px solid #000; height: 10vh; width: 10vh;"></td>
+          <td style="vertical-align: center; text-align:center; border: 2px solid #000; height: 10vh; width: 10vh;"></td>
+          <td style="vertical-align: center; text-align:center; border: 2px solid #000; height: 10vh; width: 10vh;"></td>
+        </tr>
+        <tr style="border: 2px solid #000;">
+          <td style="vertical-align: center; text-align:center; border: 2px solid #000; height: 10vh; width: 10vh;"></td>
+          <td style="vertical-align: center; text-align:center; border: 2px solid #000; height: 10vh; width: 10vh;"></td>
+          <td style="vertical-align: center; text-align:center; border: 2px solid #000; height: 10vh; width: 10vh;"></td>
+        </tr>
+        <tr style="border: 2px solid #000;">
+          <td style="vertical-align: center; text-align:center; border: 2px solid #000; height: 10vh; width: 10vh;"></td>
+          <td style="vertical-align: center; text-align:center; border: 2px solid #000; height: 10vh; width: 10vh;"></td>
+          <td style="vertical-align: center; text-align:center; border: 2px solid #000; height: 10vh; width: 10vh;"></td>
+        </tr>
+      </table>
+    </section>
+
+<section data-markdown>
+  <textarea data-template>
+
+              ```html
+              <img src   ="watch.jpg"
+                   srcset="watch.jpg,
+                           watch-2x.jpg 2x,
+                           watch-3x.jpg 3x">
+              ```
+
+              ---
+
+              #### Width Descriptors and Media Conditions
+
+              ---
+
+              ![](img/srcset-witdh-desc.png)
+
+              ---
+
+              ![](img/sizes.png)
+
+              ---
+
+              We tell the browser how wide the image is in relationship to the viewport (or absolutely) and when that relationship changes.
+
+              ---
+
+              ![](img/sizes-demo.mp4)
+
+              ---
+
+              ### 2. Art Direction
+
+              ---
+
+              ![Obama in front of a car](img/obama-500.jpg)
+
+              ---
+
+              ![Obama in front of a car, scaled down](img/obama-100.jpg)
+
+              ---
+
+              ![Same image size as before but cropped in a way that shows more of Obama](img/obama-100-art.jpg)
+
+              ---
+
+              #### Picture
+
+              ```html
+              <picture>
+                <source media="(min-width: 900px)"
+                        srcset="cat-vertical.jpg">
+                <source media="(min-width: 750px)"
+                        srcset="cat-horizontal.jpg">
+                <img src="cat.jpg" alt="cat">
+              </picture>
+              ```
+
+              * Picture Container Element
+              * Multiple Sources with media queries
+              * `Srcset` support
+              * Fallback `<img>` element (required)
+
+              ---
+
+              ![](img/shopify-picture-example.mov)
+
+              ---
+
+              ### [Jason Grigsby – Responsive Images 101](http://blog.cloudfour.com/responsive-images-101-definitions/)
+
+            </textarea>
+          </section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+    <script src="https://cdn.jsdelivr.net/gh/ireade/caniuse-embed/public/caniuse-embed.min.js"></script>
+	</body>
+</html>
